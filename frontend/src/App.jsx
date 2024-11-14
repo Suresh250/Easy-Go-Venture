@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useNavigate, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import HolidaySpecial from './components/HolidaySpecial';
@@ -7,26 +7,31 @@ import RegularTour from './components/RegularTour';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BookingModal from './components/BookingModal';
+import SignUpLogin from './components/SignUpLogin';
 
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const navigate = useNavigate();
 
-  // Open modal and set selected item
+  // Function to open the modal with the selected item
   const openModal = (item) => {
     setSelectedItem(item);
     setIsModalOpen(true);
-
   };
 
-  // Close modal
+  // Function to close the modal
   const closeModal = () => {
     setIsModalOpen(false);
+    setSelectedItem(null);  // Clear selected item when modal is closed
+  };
+  const handleSignUpClick = () => {
+    navigate('/signuplogin');  // Navigating to the SignUp/Login page
   };
 
   return (
-    <BrowserRouter>
-      <Navbar />
+    <>
+      <Navbar onSignUpClick={handleSignUpClick}/>
       <Routes>
         <Route path="/" element={
           <>
@@ -37,14 +42,17 @@ const App = () => {
             <Footer />
           </>
         } />
+        <Route path="SignUpLogin" element = {<SignUpLogin />} />
       </Routes>
-      {/* Booking Modal */}
-      <BookingModal
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        selectedItem={selectedItem}
-      />
-    </BrowserRouter>
+      {/* Render the BookingModal */}
+      {isModalOpen && (
+        <BookingModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          selectedItem={selectedItem}
+        />
+      )}
+    </>
   );
 };
 

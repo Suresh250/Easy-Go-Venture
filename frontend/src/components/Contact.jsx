@@ -20,7 +20,7 @@ function Contact() {
             <div></div>
           </div>
 
-          <div className="crow-in">
+          <div className="crow-in contact-text-input" >
             <input type="text" id="name" name="name" placeholder="Your name" />
             <input
               type="text"
@@ -54,7 +54,7 @@ function Contact() {
             </div>
           </div>
 
-          <input className="crow-s" type="submit" value="Submit" />
+          <input className="crow-s contact-submitButton" type="submit" value="Submit" />
         </form>
 
         {/* Contact Information */}

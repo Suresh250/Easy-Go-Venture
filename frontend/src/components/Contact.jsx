@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMapPin } from '@fortawesome/free-solid-svg-icons';
+import '../css/Contact.css'
 
 function Contact() {
   const countries = ["India", "Russia", "USA", "Japan", "France", "Brazil"];

@@ -1,0 +1,8 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column layout */
+    gap: 20px; /* Space between cards */
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust width to center align the content */
+  }
+  

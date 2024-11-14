@@ -2,6 +2,7 @@
 import React from 'react';
 import Card from './Card';
 import { regularTours } from '../data';
+import '../css/RegularTours.css'
 
 function RegularTour({ onBookNowClick }) {
   return (

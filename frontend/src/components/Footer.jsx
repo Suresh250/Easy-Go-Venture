@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Footer.css'
 
 function Footer() {
   return (
@@ -11,32 +12,3 @@ function Footer() {
 }
 
 export default Footer;
-
-
-// <div className="social">
-// <ul>
-//   <li>
-//     <a
-//       href="https://pritam-sarbajna-portfolio.netlify.app/"
-//       target="_blank"
-//       rel="noreferrer"
-//     >
-//       {/* <FontAwesomeIcon icon={faGlobe} /> */}
-//     </a>
-//     <a
-//       href="https://github.com/PritamSarbajna"
-//       target="_blank"
-//       rel="noreferrer"
-//     >
-//       {/* <FontAwesomeIcon icon={FaGithub} /> */}
-//     </a>
-//     <a
-//       href="https://www.linkedin.com/in/pritam-sarbajna-74945821b/"
-//       target="_blank"
-//       rel="noreferrer"
-//     >
-//       {/* <FontAwesomeIcon icon={FaLinkedin} /> */}
-//     </a>
-//   </li>
-// </ul>
-// </div>

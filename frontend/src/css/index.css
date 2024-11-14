@@ -78,117 +78,6 @@ html {
   border-radius: 10px;
 }
 
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: saturate(180%) blur(10px);
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 5px;
-  z-index: 10;
-  color: whitesmoke;
-}
-
-
-
-.logo {
-  font-family: var(--ff-rubik-dirt);
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  padding: 0 1.2rem;
-  font-weight: 300;
-  color: rgb(254, 252, 252); 
-  display: flex;
-  justify-content: center;
-  
-  
-}
-
-
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-
-.nav-links li {
-  font-family: var(--ff-montserrat);
-  margin: 0px 15px;
-}
-
-.nav-links li a {
-  color: white;
-  cursor: pointer;
-}
-
-.cir_border {
-  padding: 6px 20px;
-  font-weight: bold;
-  border: 2px hidden whitesmoke;
-  border-radius: 20px;
-  margin: 0px -10px;
-}
-
-header {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../img/bg.png");
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-}
-
-.header-content {
-  font-family: var(--ff-lora);
-  letter-spacing: 0.5rem;
-  color: whitesmoke;
-  text-align: center;
-  z-index: 1;
-  padding: 4rem;
-  margin-bottom: 150px;
-}
-
-.header-content a {
-  letter-spacing: 0.1rem;
-}
-
-.header-content h2 {
-  font-size: 4vmin;
-}
-
-.line {
-  width: 150px;
-  height: 4px;
-  background: #fc036b;
-  margin: 10px auto;
-  border-radius: 5px;
-}
-
-.header-content h1 {
-  font-size: 7vmin;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  color: black;
-}
-
-.ctn {
-  font-family: var(--ff-montserrat);
-  font-size: var(--fs-links-btns);
-  font-weight: 700;
-  padding: 13px 50px;
-  background: #fc036b;
-  border-radius: 30px;
-  color: whitesmoke;
-}
-
 .menu-btn {
   position: absolute;
   top: 30px;
@@ -870,20 +759,7 @@ body.dark{
 }
 
 
-#quote {
-  position: relative;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-size: 4em;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 8s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(0, 102, 255, 0);
-}
+
 
 @keyframes animate {
   0% {

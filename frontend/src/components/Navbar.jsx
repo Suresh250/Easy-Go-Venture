@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '/img/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun, faBars } from '@fortawesome/free-solid-svg-icons';
+import '../css/NavBar.css'
 
 const NavBar = ({ onSignUpClick }) => {
   return (

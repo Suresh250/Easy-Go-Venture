@@ -100,9 +100,9 @@ const SignUpLogin = () => {
           if (!isSignUp) {
             // Corrected the field names here
             const userData = {
-              firstName: data.user.firstName, // corrected from first_name to firstName
-              lastName: data.user.lastName,   // added lastName if needed
-              emailOrPhone: data.user.email_Or_Phone,
+              firstName: data.user.firstName, 
+              lastName: data.user.lastName,  
+              emailOrPhone: data.user.emailOrPhone,
             };
             console.log('User Data:', userData); // Log user data before saving it
             localStorage.setItem('user', JSON.stringify(userData));  // Store in localStorage

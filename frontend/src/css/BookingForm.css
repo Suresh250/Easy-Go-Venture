@@ -1,0 +1,59 @@
+.booking-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-form h2 {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .booking-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .booking-form input[type="date"],
+  .booking-form input[type="number"],
+  .booking-form select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .booking-form input[type="date"]:focus,
+  .booking-form input[type="number"]:focus,
+  .booking-form select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .confirm-booking-button {
+    grid-column: span 2;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .confirm-booking-button:hover {
+    background-color: #218838;
+  }
+  

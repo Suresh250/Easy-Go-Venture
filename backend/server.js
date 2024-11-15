@@ -24,10 +24,12 @@ db.connect((err) => {
 // Import routes
 const signInRoutes = require('./routes/signIn');
 const logInRoutes = require('./routes/logIn');
+const bookingsRoute = require('./routes/bookings');
 
 // Use routes
 app.use('/api', signInRoutes);
 app.use('/api', logInRoutes);
+app.use('/api/bookings', bookingsRoute);
 
 app.listen(5000, () => {
   console.log('Server is running on port 5000');

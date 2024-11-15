@@ -22,9 +22,9 @@ router.post('/login', (req, res) => {
       return res.status(200).json({
         message: 'Login successful!',
         user: {
-          firstName: user.first_name, // Assuming the column in DB is firstName
-          lastName: user.last_name,   // Assuming the column in DB is lastName
-          emailOrPhone: user.email_Or_Phone,
+          firstName: user.first_name, 
+          lastName: user.last_name,  
+          emailOrPhone: user.email_or_phone,
         },
       });
     } else {

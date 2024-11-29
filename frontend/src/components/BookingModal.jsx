@@ -50,7 +50,7 @@ const BookingModal = ({ isOpen, onClose, selectedItem }) => {
         </div>
 
         {isFormVisible ? (
-          <BookingForm onCloseForm={() => setIsFormVisible(false)} />
+          <BookingForm onCloseForm={() => setIsFormVisible(false)} destination={title}/>
         ) : (
           <div className="modal-details">
             <h2>{title}</h2>

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import '../css/BookingForm.css'
 
-const BookingForm = ({ onCloseForm }) => {
+const BookingForm = ({ onCloseForm ,destination}) => {
   const [date, setDate] = useState('');
   const [members, setMembers] = useState(1);
   const [departureTime, setDepartureTime] = useState('');
@@ -27,6 +27,7 @@ const BookingForm = ({ onCloseForm }) => {
       travelDate: date, 
       members,
       departureTime,
+      destination,
     };
   
     try {
